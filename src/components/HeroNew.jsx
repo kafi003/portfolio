@@ -51,9 +51,11 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.15, duration: 0.8, ease: appleEase }}
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1.07 }}
         >
-          <img src="/profile.png" alt="Ramish Anan Kafi" loading="eager" />
+          <div style={{width:'100%',height:'100%',display:'flex',alignItems:'center',justifyContent:'center',borderRadius:'50%',background:'linear-gradient(135deg,#1f3df3 0%,#c9a961 100%)',padding:'4px',boxShadow:'0 8px 32px rgba(31,61,243,0.13),0 2px 8px rgba(0,0,0,0.07)'}}>
+            <img src="/profile.png" alt="Ramish Anan Kafi" loading="eager" style={{width:'100%',height:'100%',borderRadius:'50%',objectFit:'cover',boxShadow:'0 2px 16px rgba(31,61,243,0.10),0 1px 3px rgba(0,0,0,0.04)',background:'#fff',border:'2px solid #fff'}} />
+          </div>
         </motion.div>
 
         {/* Main Identity */}
@@ -72,16 +74,7 @@ export default function Hero() {
               <span className="hero__title-separator">•</span>
               <span className="hero__title-specialty">Full-Stack Experience</span>
             </div>
-            <div style={{ margin: '1.3rem 0 1rem 0', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
-              <div style={{ width: '100%', maxWidth: 340, borderBottom: '1.5px solid #e5e7eb', marginBottom: '0.9rem', borderRadius: '2px' }}></div>
-              <a href="mailto:rakafi003@gmail.com" target="_blank" rel="noopener noreferrer" style={{ fontWeight: 600, color: '#1f3df3', fontSize: '1.08rem', textDecoration: 'none', letterSpacing: '0.01em', background: 'rgba(31,61,243,0.07)', padding: '0.35rem 1.1rem', borderRadius: '8px', boxShadow: '0 2px 12px rgba(31,61,243,0.07)', transition: 'background 0.2s' , border: '1px solid #e5e7eb'}} onMouseOver={e => e.currentTarget.style.background='rgba(31,61,243,0.13)'} onMouseOut={e => e.currentTarget.style.background='rgba(31,61,243,0.07)'}>rakafi003@gmail.com</a>
-              <div style={{ display: 'flex', gap: '1.3rem', justifyContent: 'center', flexWrap: 'wrap', marginTop: '0.3rem' }}>
-                <a href="https://linkedin.com/in/ramishanankafi" target="_blank" rel="noopener noreferrer" style={{ color: '#222', fontWeight: 500, fontSize: '0.99rem', textDecoration: 'none', background: '#f8f9fa', padding: '0.28rem 0.9rem', borderRadius: '7px', boxShadow: '0 1px 8px rgba(0,0,0,0.04)', border: '1px solid #e5e7eb', transition: 'background 0.2s' }} onMouseOver={e => e.currentTarget.style.background='#e5e7eb'} onMouseOut={e => e.currentTarget.style.background='#f8f9fa'}>LinkedIn</a>
-                <a href="https://github.com/kafi003" target="_blank" rel="noopener noreferrer" style={{ color: '#222', fontWeight: 500, fontSize: '0.99rem', textDecoration: 'none', background: '#f8f9fa', padding: '0.28rem 0.9rem', borderRadius: '7px', boxShadow: '0 1px 8px rgba(0,0,0,0.04)', border: '1px solid #e5e7eb', transition: 'background 0.2s' }} onMouseOver={e => e.currentTarget.style.background='#e5e7eb'} onMouseOut={e => e.currentTarget.style.background='#f8f9fa'}>GitHub</a>
-                <a href="https://www.flickr.com/photos/201212954@N04" target="_blank" rel="noopener noreferrer" style={{ color: '#222', fontWeight: 500, fontSize: '0.99rem', textDecoration: 'none', background: '#f8f9fa', padding: '0.28rem 0.9rem', borderRadius: '7px', boxShadow: '0 1px 8px rgba(0,0,0,0.04)', border: '1px solid #e5e7eb', transition: 'background 0.2s' }} onMouseOver={e => e.currentTarget.style.background='#e5e7eb'} onMouseOut={e => e.currentTarget.style.background='#f8f9fa'}>Photography</a>
-                <a href="/Ramish_Anan_Kafi_Resume.pdf" target="_blank" rel="noopener noreferrer" style={{ color: '#222', fontWeight: 500, fontSize: '0.99rem', textDecoration: 'none', background: '#f8f9fa', padding: '0.28rem 0.9rem', borderRadius: '7px', boxShadow: '0 1px 8px rgba(0,0,0,0.04)', border: '1px solid #e5e7eb', transition: 'background 0.2s' }} onMouseOver={e => e.currentTarget.style.background='#e5e7eb'} onMouseOut={e => e.currentTarget.style.background='#f8f9fa'}>Résumé</a>
-              </div>
-            </div>
+            {/* ...existing code... (removed duplicate contact/social links) */}
           </motion.div>
 
           <motion.p 

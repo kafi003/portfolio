@@ -40,7 +40,7 @@ export default function Contact() {
           }}
         >
           📍 Arlington, TX — Open to relocation<br/>
-          🎯 Open to internships, part-time, and full-time roles year-round
+          Open to internships, part-time, and full-time roles year-round
         </motion.p>
 
         <motion.p 

@@ -59,6 +59,15 @@ export default function Navigation() {
           <span className="nav-panel__eyebrow">Ramish Anan Kafi</span>
           <h1>Backend Engineer</h1>
           <p>Distributed Systems · Scalable Infrastructure</p>
+          <div className="nav-panel__contact-links" style={{marginTop:'1.1rem',display:'flex',flexDirection:'column',alignItems:'flex-start',gap:'0.7rem'}}>
+            <a href="/Ramish_Anan_Kafi_Resume.pdf" target="_blank" rel="noopener" className="nav-panel__button nav-panel__button--highlight">View Résumé</a>
+            <a href="mailto:rakafi003@gmail.com" className="nav-panel__button nav-panel__button--highlight">rakafi003@gmail.com</a>
+            <div className="nav-panel__social" style={{display:'flex',gap:'0.7rem',flexWrap:'wrap',marginTop:'0.2rem'}}>
+              <a href="https://github.com/kafi003" target="_blank" rel="noopener" className="nav-panel__button nav-panel__button--highlight">GitHub</a>
+              <a href="https://www.linkedin.com/in/kafi003" target="_blank" rel="noopener" className="nav-panel__button nav-panel__button--highlight">LinkedIn</a>
+              <a href="https://ramish.photo" target="_blank" rel="noopener" className="nav-panel__button nav-panel__button--highlight">Photography</a>
+            </div>
+          </div>
         </div>
 
         <nav className="nav-panel__nav" aria-label="Primary">
@@ -77,18 +86,6 @@ export default function Navigation() {
             ))}
           </ol>
         </nav>
-
-        <div className="nav-panel__cta">
-          <a href="/Ramish_Anan_Kafi_Resume.pdf" target="_blank" rel="noopener" className="nav-panel__button">
-            View Résumé
-          </a>
-          <a href="mailto:rakafi003@gmail.com" className="nav-panel__link">rakafi003@gmail.com</a>
-          <div className="nav-panel__social">
-            <a href="https://github.com/kafi003" target="_blank" rel="noopener">GitHub</a>
-            <span>·</span>
-            <a href="https://www.linkedin.com/in/kafi003" target="_blank" rel="noopener">LinkedIn</a>
-          </div>
-        </div>
       </div>
     </aside>
   );

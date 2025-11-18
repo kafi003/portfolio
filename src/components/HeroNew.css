@@ -213,19 +213,32 @@
     0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
-.hero__profile-info {
-  display: grid;
-  gap: 0.5rem;
+
+.hero__profile-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 320px;
+  margin: 0 auto 1.7rem auto;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1f3df3 0%, #7f3df3 50%, #c9a961 100%);
+  box-shadow: 0 8px 32px rgba(31,61,243,0.13), 0 2px 8px rgba(0,0,0,0.07);
+  overflow: hidden;
+  border: 4px solid transparent;
+  padding: 4px;
+  position: relative;
 }
 
-.hero__location {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--text-primary);
+.hero__profile-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 16px rgba(31,61,243,0.10), 0 1px 3px rgba(0,0,0,0.04);
+  background: #fff;
+  border: 2px solid #fff;
 }
-
-.hero__availability {
-  font-size: 0.9rem;
   line-height: 1.6;
   color: var(--text-secondary);
   font-weight: 500;
