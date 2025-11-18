@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1170" height="2532" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1170" height="2532" fill="url(#bg2)"/>
+  
+  <!-- Header -->
+  <text x="60" y="200" font-family="system-ui, -apple-system, sans-serif" font-size="80" font-weight="700" fill="#4ade80">LeafX</text>
+  
+  <!-- Tagline -->
+  <text x="60" y="300" font-family="system-ui, -apple-system, sans-serif" font-size="48" fill="#ffffff" opacity="0.7">AI Disease Detection</text>
+  
+  <!-- Status Badge -->
+  <rect x="60" y="350" width="180" height="60" rx="30" fill="#4ade80" opacity="0.2"/>
+  <circle cx="100" cy="380" r="8" fill="#4ade80"/>
+  <text x="120" y="390" font-family="system-ui" font-size="32" fill="#4ade80" font-weight="600">LIVE</text>
+  
+  <!-- Stats -->
+  
+  <rect x="60" y="550" width="1050" height="140" rx="30" fill="#ffffff" opacity="0.05"/>
+  <text x="100" y="630" font-family="system-ui" font-size="42" fill="#ffffff" font-weight="600">95% Accuracy</text>
+  
+  <rect x="60" y="730" width="1050" height="140" rx="30" fill="#ffffff" opacity="0.05"/>
+  <text x="100" y="810" font-family="system-ui" font-size="42" fill="#ffffff" font-weight="600">GPU Batching</text>
+  
+  <rect x="60" y="910" width="1050" height="140" rx="30" fill="#ffffff" opacity="0.05"/>
+  <text x="100" y="990" font-family="system-ui" font-size="42" fill="#ffffff" font-weight="600"><250ms Response</text>
+  
+  
+  <!-- Chart -->
+  <text x="60" y="1350" font-family="system-ui" font-size="36" fill="#ffffff" opacity="0.5">Activity Chart</text>
+  
+  <rect x="60" y="2138.0907282240564" width="70" height="261.90927177594347" rx="20" fill="#4ade80" opacity="0.8"/>
+  
+  <rect x="150" y="2206.819208754134" width="70" height="193.18079124586643" rx="20" fill="#4ade80" opacity="0.8"/>
+  
+  <rect x="240" y="2095.625201784429" width="70" height="304.37479821557116" rx="20" fill="#4ade80" opacity="0.8"/>
+  
+  <rect x="330" y="1917.3429902777393" width="70" height="482.6570097222608" rx="20" fill="#4ade80" opacity="0.8"/>
+  
+  <rect x="420" y="1838.3047933073979" width="70" height="561.6952066926021" rx="20" fill="#4ade80" opacity="0.8"/>
+  
+  <rect x="510" y="1989.1974947854653" width="70" height="410.80250521453473" rx="20" fill="#4ade80" opacity="0.8"/>
+  
+  <rect x="600" y="2017.9324518357334" width="70" height="382.0675481642665" rx="20" fill="#4ade80" opacity="0.8"/>
+  
+  <rect x="690" y="1926.7283041890853" width="70" height="473.27169581091465" rx="20" fill="#4ade80" opacity="0.8"/>
+  
+  <rect x="780" y="2209.0618252722693" width="70" height="190.93817472773063" rx="20" fill="#4ade80" opacity="0.8"/>
+  
+  <rect x="870" y="1837.6406296217622" width="70" height="562.3593703782378" rx="20" fill="#4ade80" opacity="0.8"/>
+  
+  <rect x="960" y="2130.585344285193" width="70" height="269.4146557148069" rx="20" fill="#4ade80" opacity="0.8"/>
+  
+  <rect x="1050" y="1802.9087882877398" width="70" height="597.0912117122601" rx="20" fill="#4ade80" opacity="0.8"/>
+  
+  
+  <!-- Footer -->
+  <text x="60" y="2480" font-family="system-ui" font-size="28" fill="#ffffff" opacity="0.3">Project Dashboard • Real-time Metrics</text>
+</svg>

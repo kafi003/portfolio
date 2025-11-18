@@ -1,0 +1,55 @@
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <rect width="800" height="400" fill="url(#bso-bg)"/>
+  <defs>
+    <linearGradient id="bso-bg" x1="0" y1="0" x2="800" y2="400">
+      <stop offset="0%" style="stop-color:#1e1b4b"/>
+      <stop offset="100%" style="stop-color:#312e81"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Pattern -->
+  <pattern id="community" width="60" height="60" patternUnits="userSpaceOnUse">
+    <circle cx="30" cy="30" r="2" fill="rgba(129, 140, 248, 0.15)"/>
+  </pattern>
+  <rect width="800" height="400" fill="url(#community)"/>
+  
+  <!-- Main platform mockup -->
+  <rect x="100" y="60" width="600" height="280" rx="16" fill="rgba(49, 46, 129, 0.9)" stroke="#818cf8" stroke-width="2"/>
+  
+  <!-- Navigation -->
+  <rect x="100" y="60" width="600" height="50" rx="16" fill="rgba(129, 140, 248, 0.2)"/>
+  <text x="130" y="90" fill="#ffffff" font-family="sans-serif" font-size="18" font-weight="700">BSO UTA</text>
+  <rect x="600" y="75" width="80" height="30" rx="15" fill="#818cf8"/>
+  <text x="618" y="95" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="600">Dashboard</text>
+  
+  <!-- Content area with event cards -->
+  <rect x="130" y="130" width="250" height="180" rx="12" fill="rgba(129, 140, 248, 0.1)" stroke="rgba(129, 140, 248, 0.3)" stroke-width="1"/>
+  <text x="150" y="160" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="600">Upcoming Events</text>
+  
+  <!-- Event items -->
+  <rect x="150" y="180" width="210" height="40" rx="8" fill="rgba(129, 140, 248, 0.15)"/>
+  <circle cx="170" cy="200" r="12" fill="#818cf8"/>
+  <text x="195" y="197" fill="#ffffff" font-family="sans-serif" font-size="13">Cultural Night 2024</text>
+  <text x="195" y="211" fill="rgba(255,255,255,0.6)" font-family="sans-serif" font-size="11">Nov 20 · $15</text>
+  
+  <rect x="150" y="230" width="210" height="40" rx="8" fill="rgba(129, 140, 248, 0.15)"/>
+  <circle cx="170" cy="250" r="12" fill="#818cf8"/>
+  <text x="195" y="247" fill="#ffffff" font-family="sans-serif" font-size="13">Workshop Series</text>
+  <text x="195" y="261" fill="rgba(255,255,255,0.6)" font-family="sans-serif" font-size="11">Nov 25 · Free</text>
+  
+  <!-- Stats panel -->
+  <rect x="410" y="130" width="260" height="180" rx="12" fill="rgba(129, 140, 248, 0.1)" stroke="rgba(129, 140, 248, 0.3)" stroke-width="1"/>
+  <text x="430" y="160" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="600">Community Stats</text>
+  
+  <rect x="430" y="180" width="100" height="60" rx="8" fill="rgba(129, 140, 248, 0.2)"/>
+  <text x="450" y="205" fill="#818cf8" font-family="monospace" font-size="24" font-weight="700">5K+</text>
+  <text x="450" y="225" fill="rgba(255,255,255,0.7)" font-family="sans-serif" font-size="11">Members</text>
+  
+  <rect x="550" y="180" width="100" height="60" rx="8" fill="rgba(129, 140, 248, 0.2)"/>
+  <text x="560" y="205" fill="#818cf8" font-family="monospace" font-size="20" font-weight="700">$50K+</text>
+  <text x="560" y="225" fill="rgba(255,255,255,0.7)" font-family="sans-serif" font-size="11">Payments</text>
+  
+  <rect x="430" y="255" width="220" height="40" rx="8" fill="rgba(74, 222, 128, 0.15)" stroke="#4ade80" stroke-width="1"/>
+  <text x="470" y="280" fill="#4ade80" font-family="sans-serif" font-size="13" font-weight="600">✓ Stripe Integrated</text>
+</svg>

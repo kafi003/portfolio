@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1170" height="2532" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7aa7ff;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1170" height="2532" fill="url(#bg1)"/>
+  
+  <!-- Header -->
+  <text x="60" y="200" font-family="system-ui, -apple-system, sans-serif" font-size="80" font-weight="700" fill="#7aa7ff">Axenyx</text>
+  
+  <!-- Tagline -->
+  <text x="60" y="300" font-family="system-ui, -apple-system, sans-serif" font-size="48" fill="#ffffff" opacity="0.7">AI Marketplace Platform</text>
+  
+  <!-- Status Badge -->
+  <rect x="60" y="350" width="180" height="60" rx="30" fill="#7aa7ff" opacity="0.2"/>
+  <circle cx="100" cy="380" r="8" fill="#7aa7ff"/>
+  <text x="120" y="390" font-family="system-ui" font-size="32" fill="#7aa7ff" font-weight="600">LIVE</text>
+  
+  <!-- Stats -->
+  
+  <rect x="60" y="550" width="1050" height="140" rx="30" fill="#ffffff" opacity="0.05"/>
+  <text x="100" y="630" font-family="system-ui" font-size="42" fill="#ffffff" font-weight="600">100K+ DAU</text>
+  
+  <rect x="60" y="730" width="1050" height="140" rx="30" fill="#ffffff" opacity="0.05"/>
+  <text x="100" y="810" font-family="system-ui" font-size="42" fill="#ffffff" font-weight="600">$100K+ GMV</text>
+  
+  <rect x="60" y="910" width="1050" height="140" rx="30" fill="#ffffff" opacity="0.05"/>
+  <text x="100" y="990" font-family="system-ui" font-size="42" fill="#ffffff" font-weight="600">50K+ Messages/day</text>
+  
+  
+  <!-- Chart -->
+  <text x="60" y="1350" font-family="system-ui" font-size="36" fill="#ffffff" opacity="0.5">Activity Chart</text>
+  
+  <rect x="60" y="2147.5164658178505" width="70" height="252.4835341821494" rx="20" fill="#7aa7ff" opacity="0.8"/>
+  
+  <rect x="150" y="1981.052288495546" width="70" height="418.947711504454" rx="20" fill="#7aa7ff" opacity="0.8"/>
+  
+  <rect x="240" y="2149.216925238296" width="70" height="250.78307476170417" rx="20" fill="#7aa7ff" opacity="0.8"/>
+  
+  <rect x="330" y="1801.6870746211919" width="70" height="598.3129253788081" rx="20" fill="#7aa7ff" opacity="0.8"/>
+  
+  <rect x="420" y="1870.9008047850857" width="70" height="529.0991952149142" rx="20" fill="#7aa7ff" opacity="0.8"/>
+  
+  <rect x="510" y="1944.5712384378417" width="70" height="455.42876156215823" rx="20" fill="#7aa7ff" opacity="0.8"/>
+  
+  <rect x="600" y="2110.921709425427" width="70" height="289.07829057457315" rx="20" fill="#7aa7ff" opacity="0.8"/>
+  
+  <rect x="690" y="2201.8466339853294" width="70" height="198.15336601467067" rx="20" fill="#7aa7ff" opacity="0.8"/>
+  
+  <rect x="780" y="2141.5518392862523" width="70" height="258.4481607137475" rx="20" fill="#7aa7ff" opacity="0.8"/>
+  
+  <rect x="870" y="2063.26276036954" width="70" height="336.73723963046" rx="20" fill="#7aa7ff" opacity="0.8"/>
+  
+  <rect x="960" y="1810.3041474578977" width="70" height="589.6958525421022" rx="20" fill="#7aa7ff" opacity="0.8"/>
+  
+  <rect x="1050" y="2026.1215732770759" width="70" height="373.8784267229242" rx="20" fill="#7aa7ff" opacity="0.8"/>
+  
+  
+  <!-- Footer -->
+  <text x="60" y="2480" font-family="system-ui" font-size="28" fill="#ffffff" opacity="0.3">Project Dashboard • Real-time Metrics</text>
+</svg>

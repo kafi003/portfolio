@@ -1,0 +1,48 @@
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <rect width="800" height="400" fill="url(#fintrion-bg)"/>
+  <defs>
+    <linearGradient id="fintrion-bg" x1="0" y1="0" x2="800" y2="400">
+      <stop offset="0%" style="stop-color:#0f1729"/>
+      <stop offset="100%" style="stop-color:#1a2947"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Grid pattern -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(88, 166, 255, 0.1)" stroke-width="1"/>
+  </pattern>
+  <rect width="800" height="400" fill="url(#grid)"/>
+  
+  <!-- Central dashboard mockup -->
+  <rect x="100" y="60" width="600" height="280" rx="16" fill="rgba(26, 41, 71, 0.9)" stroke="#58a6ff" stroke-width="2"/>
+  
+  <!-- Header bar -->
+  <rect x="100" y="60" width="600" height="50" rx="16" fill="rgba(88, 166, 255, 0.15)"/>
+  <circle cx="130" cy="85" r="6" fill="#58a6ff"/>
+  <rect x="150" y="78" width="120" height="14" rx="7" fill="rgba(88, 166, 255, 0.3)"/>
+  
+  <!-- Metrics cards -->
+  <rect x="130" y="140" width="160" height="80" rx="8" fill="rgba(88, 166, 255, 0.08)" stroke="rgba(88, 166, 255, 0.2)" stroke-width="1"/>
+  <text x="150" y="165" fill="#58a6ff" font-family="monospace" font-size="14" font-weight="600">EVENTS/SEC</text>
+  <text x="150" y="195" fill="#ffffff" font-family="monospace" font-size="32" font-weight="700">100K+</text>
+  
+  <rect x="320" y="140" width="160" height="80" rx="8" fill="rgba(88, 166, 255, 0.08)" stroke="rgba(88, 166, 255, 0.2)" stroke-width="1"/>
+  <text x="340" y="165" fill="#58a6ff" font-family="monospace" font-size="14" font-weight="600">LATENCY</text>
+  <text x="340" y="195" fill="#ffffff" font-family="monospace" font-size="32" font-weight="700">&lt;200ms</text>
+  
+  <rect x="510" y="140" width="160" height="80" rx="8" fill="rgba(88, 166, 255, 0.08)" stroke="rgba(88, 166, 255, 0.2)" stroke-width="1"/>
+  <text x="530" y="165" fill="#58a6ff" font-family="monospace" font-size="14" font-weight="600">UPTIME</text>
+  <text x="530" y="195" fill="#ffffff" font-family="monospace" font-size="32" font-weight="700">99.9%</text>
+  
+  <!-- Activity graph -->
+  <polyline points="130,260 170,245 210,250 250,235 290,240 330,225 370,230 410,220 450,225 490,215 530,220 570,210 610,215 650,205 670,210" 
+    fill="none" stroke="#58a6ff" stroke-width="3" opacity="0.8"/>
+  <circle cx="670" cy="210" r="4" fill="#58a6ff"/>
+  
+  <!-- Status indicators -->
+  <circle cx="630" cy="85" r="5" fill="#4ade80"/>
+  <text x="645" y="90" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="12">KAFKA</text>
+  <circle cx="630" cy="105" r="5" fill="#4ade80"/>
+  <text x="645" y="110" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="12">REDIS</text>
+</svg>

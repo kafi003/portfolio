@@ -1,0 +1,53 @@
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#rate-bg)"/>
+  <defs>
+    <linearGradient id="rate-bg" x1="0" y1="0" x2="800" y2="400">
+      <stop offset="0%" style="stop-color:#1e1b4b"/>
+      <stop offset="100%" style="stop-color:#4c1d95"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Grid -->
+  <pattern id="rate-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(139, 92, 246, 0.15)" stroke-width="1"/>
+  </pattern>
+  <rect width="800" height="400" fill="url(#rate-grid)"/>
+  
+  <!-- Dashboard -->
+  <rect x="100" y="70" width="600" height="260" rx="16" fill="rgba(76, 29, 149, 0.9)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <!-- Header -->
+  <rect x="100" y="70" width="600" height="45" rx="16" fill="rgba(139, 92, 246, 0.2)"/>
+  <text x="130" y="100" fill="#ffffff" font-family="sans-serif" font-size="18" font-weight="700">Rate Limiter Dashboard</text>
+  
+  <!-- Global nodes map -->
+  <circle cx="200" cy="160" r="4" fill="#8b5cf6"/>
+  <circle cx="350" cy="140" r="4" fill="#8b5cf6"/>
+  <circle cx="500" cy="155" r="4" fill="#8b5cf6"/>
+  <circle cx="600" cy="170" r="4" fill="#8b5cf6"/>
+  <line x1="200" y1="160" x2="350" y2="140" stroke="rgba(139, 92, 246, 0.4)" stroke-width="2"/>
+  <line x1="350" y1="140" x2="500" y2="155" stroke="rgba(139, 92, 246, 0.4)" stroke-width="2"/>
+  <line x1="500" y1="155" x2="600" y2="170" stroke="rgba(139, 92, 246, 0.4)" stroke-width="2"/>
+  <text x="180" y="185" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="10">US-EAST</text>
+  <text x="330" y="165" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="10">EU-WEST</text>
+  <text x="480" y="180" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="10">ASIA-PAC</text>
+  
+  <!-- Metrics -->
+  <rect x="130" y="210" width="160" height="80" rx="8" fill="rgba(139, 92, 246, 0.1)" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1"/>
+  <text x="150" y="235" fill="#8b5cf6" font-family="monospace" font-size="14" font-weight="600">RPS</text>
+  <text x="150" y="265" fill="#ffffff" font-family="monospace" font-size="32" font-weight="700">50K+</text>
+  
+  <rect x="320" y="210" width="160" height="80" rx="8" fill="rgba(139, 92, 246, 0.1)" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1"/>
+  <text x="340" y="235" fill="#8b5cf6" font-family="monospace" font-size="14" font-weight="600">LATENCY</text>
+  <text x="340" y="265" fill="#ffffff" font-family="monospace" font-size="32" font-weight="700">&lt;10ms</text>
+  
+  <rect x="510" y="210" width="160" height="80" rx="8" fill="rgba(139, 92, 246, 0.1)" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1"/>
+  <text x="530" y="235" fill="#8b5cf6" font-family="monospace" font-size="14" font-weight="600">UPTIME</text>
+  <text x="530" y="265" fill="#ffffff" font-family="monospace" font-size="32" font-weight="700">99.99%</text>
+  
+  <!-- Status -->
+  <rect x="250" y="350" width="300" height="30" rx="15" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="1"/>
+  <circle cx="280" cy="365" r="4" fill="#4ade80"/>
+  <text x="295" y="370" fill="rgba(255,255,255,0.8)" font-family="monospace" font-size="12">Redis Cluster • gRPC • K8s</text>
+</svg>

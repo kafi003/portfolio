@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* Colors - Refined 3-color palette */
+  --page-bg: #f7f1ea;
+  --page-bg-soft: #efe8df;
+  --surface: #ffffff;
+  --surface-alt: #f3ede6;
+  --card: #ffffff;
+  --card-muted: #f9f5ef;
+  --border: #ded4c7;
+  --border-soft: #eae1d6;
+  --border-strong: #c8bcad;
+  --text-primary: #1c1710;
+  --text-secondary: #4a4239;
+  --text-tertiary: #7d756c;
+  --text-muted: #6b6359;
+  --text-strong: #1c1710;
+  --text: #352f27;
+  --accent: #1f3df3;
+  --accent-dark: #1223b0;
+  --accent-soft: #e0e4ff;
+  --accent-muted: #f2f4ff;
+  
+  /* Typography Scale - FAANG-level hierarchy */
+  --font-h1: clamp(3.2rem, 5vw, 4.2rem);
+  --font-h2: clamp(2.4rem, 4vw, 3.2rem);
+  --font-h3: clamp(1.8rem, 3vw, 2.4rem);
+  --font-body-lg: 1.2rem;
+  --font-body: 1.1rem;
+  --font-body-sm: 0.95rem;
+  
+  /* Spacing Scale */
+  --space-section: clamp(4rem, 8vw, 6.5rem);
+  --space-lg: clamp(3rem, 5vw, 4rem);
+  --space-md: clamp(2rem, 4vw, 3rem);
+  --space-sm: 1.5rem;
+  
+  /* Border Radius */
+  --radius-xl: 32px;
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-sm: 10px;
+  
+  /* Shadows */
+  --shadow-sm: 0 14px 36px rgba(33, 24, 16, 0.08);
+  --shadow-md: 0 28px 70px rgba(33, 24, 16, 0.08);
+  --shadow-lg: 0 48px 120px rgba(33, 24, 16, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(180deg, var(--page-bg) 0%, var(--page-bg-soft) 100%);
+  color: var(--text-primary);
+  font-size: var(--font-body);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: linear-gradient(transparent 31px, rgba(0, 0, 0, 0.025) 31px),
+    linear-gradient(90deg, transparent 31px, rgba(0, 0, 0, 0.02) 31px);
+  background-size: 32px 32px;
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: -1;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: var(--radius-md);
+}
+
+.section-heading {
+  font-family: 'Clash Display', 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: var(--font-h2);
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  line-height: 1.15;
+}
+
+.section-sub {
+  font-size: var(--font-body);
+  color: var(--text-secondary);
+  max-width: 600px;
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+/* =============================================
+   UTILITY CLASSES - Glass Morph & Reusable
+   ============================================= */
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 8px 32px rgba(31, 61, 243, 0.08),
+    0 1px 3px rgba(0, 0, 0, 0.04),
+    inset 0 1px 1px rgba(255, 255, 255, 0.6);
+}
+
+.glass-panel--dark {
+  background: rgba(28, 23, 16, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}

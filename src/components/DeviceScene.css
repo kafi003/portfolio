@@ -1,0 +1,1194 @@
+.mobile-dashboard {
+  display: grid;
+  gap: 1.1rem;
+  padding: 18px;
+  border-radius: 26px;
+  background: linear-gradient(165deg, rgba(0, 0, 0, 0.68) 0%, rgba(0, 0, 0, 0.45) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.14);
+  -webkit-backdrop-filter: blur(22px);
+  backdrop-filter: blur(22px);
+}
+
+.mobile-dashboard.transitioning {
+  opacity: 0.85;
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.78);
+  height: 22px;
+}
+
+.status-icons {
+  display: flex;
+  gap: 4px;
+}
+
+.mobile-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 12px;
+}
+
+.mobile-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.4);
+}
+
+.mobile-kicker {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.mobile-header h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.mobile-header p {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 2px 0 0;
+}
+
+.mobile-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.mobile-pill {
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.75rem;
+  letter-spacing: 0.03em;
+}
+
+.mobile-summary {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 14px;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mobile-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.mobile-footer__label {
+  font-size: 0.68rem;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.mobile-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.mobile-tags span {
+  padding: 0.35rem 0.65rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.7rem;
+}
+
+.mobile-action-button {
+  border: none;
+  border-radius: 14px;
+  padding: 0.9rem 1.2rem;
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: #0b0d12;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.mobile-action-button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+.mobile-action-button:active {
+  transform: translateY(0);
+  filter: brightness(0.95);
+}
+.device-wrapper > * {
+  position: relative;
+  z-index: 1;
+}
+
+.devices-3d-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: clamp(2rem, 5vw, 3rem);
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 5vw, 3.5rem);
+}
+
+.device-3d-item {
+  position: relative;
+  border-radius: var(--radius-xl);
+  padding: clamp(1.75rem, 3.5vw, 2.75rem);
+  background: linear-gradient(160deg, var(--card) 0%, var(--card-muted) 100%);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.device-3d-item:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent-soft);
+  box-shadow: var(--shadow-md);
+}
+
+.project-info-3d {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  display: grid;
+  gap: 0.75rem;
+}
+
+.project-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.project-tagline {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.project-stats-3d {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.stat-badge {
+  padding: 0.35rem 0.85rem;
+  background: var(--card-muted);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.section-kicker {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: clamp(3.25rem, 7vw, 4.75rem);
+  display: grid;
+  gap: 0.75rem;
+  position: relative;
+  z-index: 1;
+}
+
+.section-header h2 {
+  font-size: clamp(2.4rem, 4vw, 3rem);
+  font-weight: 600;
+  color: var(--text-strong);
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+@keyframes ambient-glow {
+  0%, 100% {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.18);
+  }
+}
+
+/* ===== MACBOOK PRO M5 ===== */
+.macbook-wrapper {
+  perspective: 2100px;
+  filter: drop-shadow(0 24px 48px rgba(33, 24, 16, 0.22));
+}
+
+.macbook {
+  transform-style: preserve-3d;
+  position: relative;
+  animation: rotate-device 20s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+}
+
+@keyframes rotate-device {
+  0% { 
+    transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateY(0px);
+  }
+  25% { 
+    transform: rotateY(15deg) rotateX(-5deg) rotateZ(2deg) translateY(-10px);
+  }
+  50% { 
+    transform: rotateY(0deg) rotateX(-8deg) rotateZ(0deg) translateY(-15px);
+  }
+  75% { 
+    transform: rotateY(-15deg) rotateX(-3deg) rotateZ(-2deg) translateY(-10px);
+  }
+  100% { 
+    transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateY(0px);
+  }
+}
+
+.macbook:hover {
+  animation-play-state: paused;
+  transform: rotateY(-8deg) rotateX(3deg) scale(1.03) translateZ(20px);
+}
+
+
+.dashboard-content {
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow: hidden;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dashboard-content.transitioning {
+  opacity: 0.78;
+  transform: scale(0.985);
+}
+
+.dashboard-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+
+.project-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.38);
+}
+
+.project-info {
+  display: grid;
+  gap: 4px;
+}
+
+.dashboard-kicker {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.project-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.project-info p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.dashboard-body {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.dashboard-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+
+.dashboard-action-button {
+  border: none;
+  border-radius: 12px;
+  padding: 0.85rem 1.8rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #0b0d12;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.dashboard-action-button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+.dashboard-action-button:active {
+  transform: translateY(0);
+  filter: brightness(0.95);
+}
+
+.dashboard-action-hint {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: rgba(255, 255, 255, 0.55);
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.dashboard-summary {
+  padding: 1.25rem 1.5rem;
+  border-radius: 14px;
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.03) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: grid;
+  gap: 0.65rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dashboard-summary__label {
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.dashboard-summary p {
+  margin: 0;
+  line-height: 1.65;
+  font-size: 0.9rem;
+}
+
+.dashboard-metrics {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.dashboard-metric {
+  padding: 0.9rem 1rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: grid;
+  gap: 0.2rem;
+}
+
+.dashboard-metric__value {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.dashboard-metric__label {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.dashboard-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.dashboard-tech span {
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+}
+
+.notch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 30px;
+  background: #000;
+  border-radius: 0 0 18px 18px;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  display: none; /* MacBook Pro M5 has camera in bezel, not notch */
+}
+
+.macbook-base {
+  width: 106%;
+  margin-left: -3%;
+  height: 24px;
+  background: 
+    /* Anodized aluminum micro-texture */
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 1px,
+      rgba(255,255,255,0.015) 1px,
+      rgba(255,255,255,0.015) 2px
+    ),
+    /* Aluminum reflection top */
+    linear-gradient(90deg, 
+      rgba(255,255,255,0.02) 0%,
+      rgba(255,255,255,0.06) 25%,
+      rgba(255,255,255,0.08) 50%,
+      rgba(255,255,255,0.06) 75%,
+      rgba(255,255,255,0.02) 100%
+    ),
+    /* Space Black base gradient */
+    linear-gradient(180deg, #14141c, #0a0a10, #08080c);
+  border-radius: 0 0 12px 12px;
+  position: relative;
+  box-shadow: 
+    /* Main shadow */
+    0 12px 30px rgba(0, 0, 0, 0.8),
+    /* Top highlight (hinge area) */
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    /* Inner depth */
+    inset 0 -2px 6px rgba(0, 0, 0, 0.6),
+    /* Bottom edge */
+    0 1px 0 rgba(0, 0, 0, 0.9),
+    /* Outer rim glow */
+    0 0 0 0.5px rgba(255, 255, 255, 0.03);
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+  gap: 16px;
+}
+
+/* Anodized aluminum surface grain */
+.macbook-base::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    /* CNC machined pattern */
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 0.5px,
+      rgba(255,255,255,0.008) 0.5px,
+      rgba(255,255,255,0.008) 1px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 0.5px,
+      rgba(0,0,0,0.01) 0.5px,
+      rgba(0,0,0,0.01) 1px
+    );
+  pointer-events: none;
+  border-radius: 0 0 12px 12px;
+}
+
+/* Apple logo position (optional detail) */
+.macbook-base::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  clip-path: polygon(
+    50% 0%, 60% 10%, 70% 10%, 65% 25%, 80% 40%, 80% 60%,
+    70% 70%, 70% 90%, 50% 100%, 30% 90%, 30% 70%, 20% 60%,
+    20% 40%, 35% 25%, 30% 10%, 40% 10%
+  );
+}
+
+.keyboard {
+  flex: 1;
+  height: 4px;
+  background: #050505;
+  border-radius: 2px;
+  margin-right: 12px;
+}
+
+.trackpad {
+  width: 80px;
+  height: 50%;
+  background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ===== IPHONE 15 PRO MAX ===== */
+.iphone-wrapper {
+  perspective: 2000px;
+  filter: drop-shadow(0 22px 46px rgba(33, 24, 16, 0.2));
+}
+
+.iphone {
+  width: 100%;
+  max-width: 340px;  /* Proportional to real 6.7" display */
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  animation: rotate-device-phone 20s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+  animation-delay: -10s; /* Offset by half duration for variation */
+  position: relative;
+}
+
+@keyframes rotate-device-phone {
+  0% { 
+    transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateY(0px);
+  }
+  25% { 
+    transform: rotateY(-15deg) rotateX(5deg) rotateZ(-2deg) translateY(-12px);
+  }
+  50% { 
+    transform: rotateY(0deg) rotateX(8deg) rotateZ(0deg) translateY(-18px);
+  }
+  75% { 
+    transform: rotateY(15deg) rotateX(3deg) rotateZ(2deg) translateY(-12px);
+  }
+  100% { 
+    transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateY(0px);
+  }
+}
+
+.iphone:hover {
+  animation-play-state: paused;
+  transform: rotateY(8deg) rotateX(-3deg) scale(1.06) translateZ(30px);
+}
+
+.iphone-frame {
+  aspect-ratio: 9 / 19.5;  /* Real iPhone 15 Pro Max ratio (2796x1290) */
+  background: 
+    /* Grade 5 Titanium - Natural finish with PVD coating */
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 0.25px,
+      rgba(255,255,255,0.008) 0.25px,
+      rgba(255,255,255,0.008) 0.5px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 0.25px,
+      rgba(0,0,0,0.005) 0.25px,
+      rgba(0,0,0,0.005) 0.5px
+    ),
+    /* Titanium base color - Natural finish (warmer than Space Gray) */
+    linear-gradient(140deg, 
+      #48484e 0%,
+      #3c3c42 25%,
+      #424248 50%,
+      #38383e 75%,
+      #404046 100%
+    );
+  border-radius: 55px;  /* Real iPhone corner radius */
+  padding: 2.5px;  /* Real titanium frame width */
+  position: relative;
+  box-shadow: 
+    /* Device shadow */
+    0 30px 90px rgba(0, 0, 0, 0.9),
+    0 15px 45px rgba(0, 0, 0, 0.7),
+    /* Frame highlight */
+    inset 0 0.5px 1px rgba(255, 255, 255, 0.2),
+    /* Inner shadow */
+    inset 0 -0.5px 1px rgba(0, 0, 0, 0.9),
+    /* Edge definition */
+    0 0 0 0.5px rgba(0, 0, 0, 0.95);
+  border: 0.5px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Titanium contoured edges with chamfer */
+.iphone-frame::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 55px;
+  background: 
+    /* Light play on curved surfaces */
+    linear-gradient(90deg,
+      rgba(255,255,255,0.12) 0%,
+      transparent 5%,
+      transparent 95%,
+      rgba(255,255,255,0.08) 100%
+    ),
+    linear-gradient(0deg,
+      rgba(0,0,0,0.15) 0%,
+      transparent 5%,
+      transparent 95%,
+      rgba(0,0,0,0.1) 100%
+    );
+  pointer-events: none;
+}
+
+/* Action Button (replaces mute switch) */
+.iphone-frame::after {
+  content: '';
+  position: absolute;
+  left: -1.5px;
+  top: 28%;
+  width: 4px;
+  height: 18px;
+  background: 
+    linear-gradient(90deg,
+      rgba(0,0,0,0.4) 0%,
+      rgba(60,60,66,0.9) 30%,
+      rgba(70,70,76,1) 100%
+    );
+  border-radius: 0 3px 3px 0;
+  box-shadow: 
+    inset 0 1px 0 rgba(255,255,255,0.2),
+    inset 0 -1px 0 rgba(0,0,0,0.4);
+}
+
+.iphone-screen {
+  width: 100%;
+  height: 100%;
+  background: #000000;  /* True OLED black */
+  border-radius: 51px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 
+    /* Ceramic Shield depth */
+    inset 0 0 40px rgba(0, 0, 0, 0.98),
+    /* Screen edge */
+    inset 0 0 0 0.5px rgba(255, 255, 255, 0.03);
+}
+
+/* Ceramic Shield with oleophobic coating */
+.iphone-screen::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: 
+    /* Glass reflection */
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.025) 0%,
+      rgba(255,255,255,0.008) 30%,
+      transparent 100%
+    );
+  pointer-events: none;
+  z-index: 50;
+}
+
+/* ProMotion 120Hz subtle effect */
+.iphone-screen::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(
+      ellipse at 50% 50%,
+      rgba(255,255,255,0.005) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.mobile-dashboard {
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: hidden;
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  height: 24px;
+}
+
+.status-icons {
+  display: flex;
+  gap: 6px;
+}
+
+.mobile-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 16px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.mobile-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.mobile-header h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.mobile-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mobile-stat-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid;
+  border-radius: 12px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.mobile-stat-value {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.mobile-stat-label {
+  font-size: 12px;
+  color: #888;
+}
+
+
+.dynamic-island {
+  position: absolute;
+  top: 11px;  /* Real positioning */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 125px;  /* Real Dynamic Island width */
+  height: 37px;  /* Real Dynamic Island height */
+  background: #000000;
+  border-radius: 21px;  /* Pill shape */
+  z-index: 60;
+  box-shadow: 
+    /* Cutout depth */
+    inset 0 3px 12px rgba(0, 0, 0, 1),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.95);
+  overflow: hidden;
+}
+
+/* TrueDepth camera (left side of island) */
+.dynamic-island::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+  width: 8.5px;
+  height: 8.5px;
+  background: 
+    /* Camera lens */
+    radial-gradient(circle, #0d1a2a 0%, #000 75%);
+  border-radius: 50%;
+  box-shadow: 
+    /* Lens depth */
+    inset 0 1px 3px rgba(0, 0, 0, 1),
+    /* Subtle reflection */
+    inset -1px -1px 1px rgba(100, 120, 150, 0.08);
+}
+
+/* Face ID dot projector (right side of island) */
+.dynamic-island::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background: 
+    radial-gradient(circle, #050505 0%, #000 80%);
+  border-radius: 50%;
+  box-shadow: 
+    inset 0 1px 2px rgba(0, 0, 0, 1);
+}
+
+.camera-module {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 60px;  /* Real camera bump size */
+  height: 57px;
+  background: 
+    /* Sapphire crystal cover */
+    radial-gradient(circle at 25% 25%, rgba(120,140,200,0.04) 0%, transparent 60%),
+    /* Titanium base matching frame */
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 0.25px,
+      rgba(255,255,255,0.008) 0.25px,
+      rgba(255,255,255,0.008) 0.5px
+    ),
+    linear-gradient(140deg, #48484e, #3c3c42, #424248);
+  border-radius: 18px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 25px 22px;  /* Asymmetric for main camera */
+  gap: 4px;
+  box-shadow: 
+    /* Camera bump shadow */
+    0 4px 12px rgba(0, 0, 0, 0.8),
+    /* Top highlight */
+    inset 0 0.5px 0 rgba(255, 255, 255, 0.2),
+    inset 0 -0.5px 1px rgba(0, 0, 0, 0.7),
+    /* Outer rim */
+    0 0 0 0.5px rgba(0, 0, 0, 0.95);
+  border: 0.5px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Sapphire crystal protective cover */
+.camera-module::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  background: 
+    /* AR coating shimmer */
+    linear-gradient(
+      135deg,
+      rgba(100,140,255,0.025) 0%,
+      transparent 40%,
+      rgba(180,100,255,0.015) 100%
+    );
+  pointer-events: none;
+}
+
+.camera-lens {
+  background: 
+    /* Sapphire lens reflection (bluish tint from AR coating) */
+    radial-gradient(circle at 28% 28%, rgba(100, 140, 220, 0.25) 0%, transparent 35%),
+    /* Multi-layer lens coating */
+    radial-gradient(circle at 50% 50%, rgba(80, 110, 180, 0.12) 0%, transparent 55%),
+    /* Lens glass layers */
+    radial-gradient(circle at 60% 60%, rgba(255, 255, 255, 0.03) 0%, transparent 30%),
+    /* Deep lens barrel */
+    radial-gradient(circle, #080d15 0%, #040608 40%, #000000 100%);
+  border-radius: 50%;
+  border: 1px solid rgba(40, 60, 100, 0.35);
+  box-shadow: 
+    /* Lens depth */
+    inset 0 2px 6px rgba(0, 0, 0, 0.95),
+    /* Sapphire crystal edge */
+    inset 0 -1px 2px rgba(100, 140, 220, 0.15),
+    /* Outer shadow */
+    0 0 6px rgba(0, 0, 0, 0.6),
+    /* Glass reflection */
+    inset -1.5px -1.5px 3px rgba(255, 255, 255, 0.04);
+  position: relative;
+}
+
+/* Lens aperture highlight */
+.camera-lens::before {
+  content: '';
+  position: absolute;
+  top: 12%;
+  left: 18%;
+  width: 28%;
+  height: 28%;
+  background: 
+    radial-gradient(
+      circle,
+      rgba(255,255,255,0.25) 0%,
+      rgba(255,255,255,0.1) 50%,
+      transparent 100%
+    );
+  border-radius: 50%;
+  transform: rotate(-40deg);
+}
+
+/* AR coating (anti-reflective purple/blue shimmer) */
+.camera-lens::after {
+  content: '';
+  position: absolute;
+  inset: 6%;
+  background: 
+    linear-gradient(
+      125deg,
+      rgba(100,140,255,0.08) 0%,
+      transparent 45%,
+      rgba(180,100,255,0.06) 100%
+    );
+  border-radius: 50%;
+}
+
+/* 48MP Main Camera (larger, top row spanning both columns) */
+.camera-lens:nth-child(1) {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  border-width: 1.5px;
+}
+
+/* 12MP Ultra Wide (bottom left) */
+.camera-lens:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+/* 12MP 5x Telephoto Periscope (bottom right) */
+.camera-lens:nth-child(3) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.main-camera {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+}
+
+/* LiDAR Scanner */
+.lidar-scanner {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  background: 
+    /* LiDAR emitter glow */
+    radial-gradient(circle at 50% 50%, rgba(255, 50, 50, 0.7) 0%, transparent 35%),
+    radial-gradient(circle at 50% 50%, #ff1a1a 0%, #550000 40%, #000000 100%);
+  border-radius: 50%;
+  border: 1.5px solid rgba(120, 20, 20, 0.7);
+  animation: lidar-pulse 2s ease-in-out infinite;
+  box-shadow: 
+    /* Inner depth */
+    inset 0 2px 8px rgba(0, 0, 0, 0.95),
+    /* Red emitter glow */
+    0 0 16px rgba(255, 0, 0, 0.5),
+    0 0 8px rgba(255, 0, 0, 0.3),
+    /* Outer rim */
+    0 0 0 1px rgba(255, 0, 0, 0.3);
+  position: relative;
+}
+
+.lidar {
+  background: 
+    /* LiDAR emitter glow */
+    radial-gradient(circle at 50% 50%, rgba(255, 50, 50, 0.6) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, #ff0000 0%, #330000 50%, #000000 100%);
+  border-radius: 50%;
+  border: 2px solid rgba(100, 20, 20, 0.6);
+  animation: lidar-pulse 2s ease-in-out infinite;
+  box-shadow: 
+    /* Inner depth */
+    inset 0 2px 6px rgba(0, 0, 0, 0.9),
+    /* Red glow */
+    0 0 12px rgba(255, 0, 0, 0.4),
+    /* Outer rim */
+    0 0 0 1px rgba(255, 0, 0, 0.2);
+  position: relative;
+}
+
+/* LiDAR dot matrix effect */
+.lidar-scanner::before {
+  content: '';
+  position: absolute;
+  inset: 25%;
+  background: 
+    radial-gradient(circle, rgba(255,100,100,0.8) 0%, transparent 50%);
+  border-radius: 50%;
+  animation: lidar-scan 1.5s ease-in-out infinite;
+}
+
+@keyframes lidar-scan {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes lidar-pulse {
+  0% { 
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.3);
+    transform: scale(1);
+  }
+  25% { 
+    box-shadow: 0 0 16px rgba(255, 0, 0, 0.5);
+    transform: scale(1.05);
+  }
+  50% { 
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+    transform: scale(1.08);
+  }
+  75% { 
+    box-shadow: 0 0 14px rgba(255, 0, 0, 0.4);
+    transform: scale(1.03);
+  }
+  100% { 
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.3);
+    transform: scale(1);
+  }
+}
+
+.showcase-hint {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  padding: 1.1rem 1.5rem;
+  background: var(--card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  max-width: 640px;
+  margin: clamp(3rem, 6vw, 4.5rem) auto 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .devices-container {
+    grid-template-columns: minmax(0, 1fr);
+    gap: clamp(2.25rem, 7vw, 3.25rem);
+    padding: 0 clamp(1.25rem, 6vw, 2.25rem);
+  }
+
+  .macbook-wrapper,
+  .iphone-wrapper {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .device-showcase-section {
+    padding: clamp(3.5rem, 12vw, 4.25rem) 0;
+  }
+
+  .section-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    text-align: center;
+  }
+}

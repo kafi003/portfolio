@@ -1,0 +1,43 @@
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <rect width="800" height="400" fill="url(#axenyx-bg)"/>
+  <defs>
+    <linearGradient id="axenyx-bg" x1="0" y1="0" x2="800" y2="400">
+      <stop offset="0%" style="stop-color:#1a1333"/>
+      <stop offset="100%" style="stop-color:#2d2052"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Marketplace grid -->
+  <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse">
+    <circle cx="15" cy="15" r="1.5" fill="rgba(122, 167, 255, 0.15)"/>
+  </pattern>
+  <rect width="800" height="400" fill="url(#dots)"/>
+  
+  <!-- AI Marketplace cards -->
+  <rect x="80" y="80" width="220" height="240" rx="12" fill="rgba(45, 32, 82, 0.9)" stroke="#7aa7ff" stroke-width="1.5"/>
+  <rect x="80" y="80" width="220" height="140" rx="12" fill="rgba(122, 167, 255, 0.12)"/>
+  <circle cx="190" cy="150" r="30" fill="rgba(122, 167, 255, 0.3)"/>
+  <text x="100" y="245" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="600">AI Model Alpha</text>
+  <text x="100" y="270" fill="#7aa7ff" font-family="monospace" font-size="14">$49/month</text>
+  <rect x="100" y="285" width="80" height="24" rx="12" fill="#7aa7ff"/>
+  <text x="115" y="301" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="600">View</text>
+  
+  <rect x="330" y="80" width="220" height="240" rx="12" fill="rgba(45, 32, 82, 0.9)" stroke="#7aa7ff" stroke-width="1.5"/>
+  <rect x="330" y="80" width="220" height="140" rx="12" fill="rgba(122, 167, 255, 0.12)"/>
+  <circle cx="440" cy="150" r="30" fill="rgba(122, 167, 255, 0.3)"/>
+  <text x="350" y="245" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="600">AI Model Beta</text>
+  <text x="350" y="270" fill="#7aa7ff" font-family="monospace" font-size="14">$79/month</text>
+  <rect x="350" y="285" width="80" height="24" rx="12" fill="#7aa7ff"/>
+  <text x="365" y="301" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="600">View</text>
+  
+  <rect x="580" y="80" width="220" height="240" rx="12" fill="rgba(45, 32, 82, 0.9)" stroke="#7aa7ff" stroke-width="1.5" opacity="0.7"/>
+  <rect x="580" y="80" width="220" height="140" rx="12" fill="rgba(122, 167, 255, 0.12)"/>
+  
+  <!-- Stats banner -->
+  <rect x="200" y="350" width="400" height="50" rx="25" fill="rgba(122, 167, 255, 0.2)" stroke="#7aa7ff" stroke-width="2"/>
+  <text x="240" y="370" fill="#7aa7ff" font-family="monospace" font-size="12" font-weight="600">100K+ DAU</text>
+  <text x="240" y="388" fill="rgba(255,255,255,0.7)" font-family="sans-serif" font-size="11">Daily Active Users</text>
+  <text x="420" y="370" fill="#7aa7ff" font-family="monospace" font-size="12" font-weight="600">$100K+ GMV</text>
+  <text x="420" y="388" fill="rgba(255,255,255,0.7)" font-family="sans-serif" font-size="11">Gross Marketplace</text>
+</svg>

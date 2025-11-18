@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Generate Project Screenshots</title>
+    <style>
+        body { margin: 0; font-family: system-ui; }
+        .project-screen {
+            width: 1170px;
+            height: 2532px;
+            display: flex;
+            flex-direction: column;
+            padding: 60px;
+            box-sizing: border-box;
+        }
+        .header {
+            font-size: 80px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+        .tagline {
+            font-size: 48px;
+            opacity: 0.7;
+            margin-bottom: 100px;
+        }
+        .stats {
+            display: grid;
+            gap: 40px;
+            margin-bottom: 100px;
+        }
+        .stat-card {
+            padding: 60px;
+            border-radius: 30px;
+            background: rgba(255,255,255,0.05);
+            font-size: 42px;
+        }
+        .chart {
+            display: flex;
+            gap: 20px;
+            align-items: flex-end;
+            height: 600px;
+            margin-top: auto;
+        }
+        .bar {
+            flex: 1;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="screens"></div>
+    <script>
+        const projects = [
+            { name: 'Fintrion', tagline: 'Distributed Payment Mesh', color: '#58a6ff', stats: ['100K+ Events/sec', '99.9% Uptime', 'Sub-200ms Latency'] },
+            { name: 'Axenyx', tagline: 'AI Marketplace Platform', color: '#7aa7ff', stats: ['100K+ DAU', '$100K+ GMV', '50K+ Messages/day'] },
+            { name: 'LeafX', tagline: 'AI Disease Detection', color: '#4ade80', stats: ['95% Accuracy', 'GPU Batching', '<250ms Response'] },
+            { name: 'BSO UTA', tagline: 'Community Platform', color: '#f59e0b', stats: ['5K+ Members', '$50K+ Processed', '40% Ticket Reduction'] }
+        ];
+        
+        projects.forEach((project, i) => {
+            const screen = document.createElement('div');
+            screen.className = 'project-screen';
+            screen.style.background = `linear-gradient(135deg, ${project.color}30 0%, #000 100%)`;
+            screen.style.color = '#fff';
+            
+            screen.innerHTML = `
+                <div class="header" style="color: ${project.color}">${project.name}</div>
+                <div class="tagline">${project.tagline}</div>
+                <div class="stats">
+                    ${project.stats.map(stat => `<div class="stat-card">${stat}</div>`).join('')}
+                </div>
+                <div class="chart">
+                    ${Array(12).fill(0).map(() => `<div class="bar" style="background: ${project.color}; height: ${30 + Math.random() * 70}%"></div>`).join('')}
+                </div>
+            `;
+            
+            document.getElementById('screens').appendChild(screen);
+        });
+        
+        console.log('Screenshots ready! Right-click each section and "Save as PNG"');
+        console.log('Save as: screen1.png, screen2.png, screen3.png, screen4.png');
+    </script>
+</body>
+</html>

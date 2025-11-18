@@ -1,0 +1,84 @@
+.project-showcase-hub {
+  position: relative;
+  padding: clamp(3.25rem, 6vw, 4.5rem);
+  background: linear-gradient(140deg, var(--card) 0%, var(--card-muted) 45%, var(--page-bg) 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  display: grid;
+  gap: clamp(2.25rem, 4.5vw, 3.4rem);
+  overflow: hidden;
+}
+
+.project-showcase-header {
+  display: grid;
+  gap: 1rem;
+  max-width: 720px;
+}
+
+.hub-eyebrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+}
+
+.project-showcase-header h2 {
+  font-family: 'Clash Display', 'Manrope', sans-serif;
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  color: var(--text-strong);
+  line-height: 1.2;
+}
+
+.project-showcase-header p {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.project-showcase-body {
+  display: grid;
+  gap: clamp(2.25rem, 5vw, 3.75rem);
+  grid-template-columns: minmax(360px, 1.55fr) minmax(280px, 1fr);
+  align-items: stretch;
+}
+
+.project-showcase-device {
+  position: relative;
+}
+
+
+.project-showcase-device .device-showcase-section {
+  padding: clamp(1.5rem, 3.5vw, 2.4rem);
+}
+
+.project-showcase-device .device-showcase-section .container {
+  padding: 0;
+}
+
+@media (max-width: 1120px) {
+  .project-showcase-body {
+    grid-template-columns: 1fr;
+  }
+
+  .project-showcase-device {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .project-showcase-hub {
+    padding: 2.5rem;
+  }
+
+  .project-showcase-body {
+    gap: 2rem;
+  }
+
+  .project-showcase-device .device-showcase-section {
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+  }
+}

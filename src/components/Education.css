@@ -1,0 +1,119 @@
+.education-section {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.education-card {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2rem);
+  padding: clamp(1.75rem, 3vw, 2.5rem);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--card);
+  box-shadow: var(--shadow-sm);
+}
+
+.education-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.education-main {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.education-degree {
+  font-family: 'Clash Display', 'Manrope', sans-serif;
+  font-size: clamp(1.35rem, 2.5vw, 1.65rem);
+  font-weight: 600;
+  color: var(--text-strong);
+}
+
+.education-school {
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.education-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.education-gpa {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.education-coursework h4,
+.education-achievements h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-tertiary);
+}
+
+.coursework-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.course-badge {
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--card-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.04em;
+}
+
+.education-achievements ul {
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.education-achievements ul li {
+  position: relative;
+  padding-left: 1.3rem;
+}
+
+.education-achievements ul li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .education-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .education-details {
+    align-items: flex-start;
+  }
+
+  .education-card {
+    padding: 1.75rem;
+  }
+}
