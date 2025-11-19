@@ -60,7 +60,7 @@ export default function Navigation() {
           <h1>Backend Engineer</h1>
           <p>Distributed Systems · Scalable Infrastructure</p>
           <div className="nav-panel__contact-links" style={{marginTop:'1.1rem',display:'flex',flexDirection:'column',alignItems:'flex-start',gap:'0.7rem'}}>
-            <a href="/Ramish_Anan_Kafi_Resume.pdf" target="_blank" rel="noopener" className="nav-panel__button nav-panel__button--highlight">View Résumé</a>
+            <button className="nav-panel__button nav-panel__button--highlight" style={{opacity:0.5,cursor:'not-allowed'}} disabled>View Résumé</button>
             <a href="mailto:rakafi003@gmail.com" className="nav-panel__button nav-panel__button--highlight">rakafi003@gmail.com</a>
             <div className="nav-panel__social" style={{display:'flex',gap:'0.7rem',flexWrap:'wrap',marginTop:'0.2rem'}}>
               <a href="https://github.com/kafi003" target="_blank" rel="noopener" className="nav-panel__button nav-panel__button--highlight">GitHub</a>
