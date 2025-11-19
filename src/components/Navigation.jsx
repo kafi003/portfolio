@@ -63,9 +63,7 @@ export default function Navigation() {
             <button className="nav-panel__button nav-panel__button--highlight" style={{opacity:0.5,cursor:'not-allowed'}} disabled>View Résumé</button>
             <a href="mailto:rakafi003@gmail.com" className="nav-panel__button nav-panel__button--highlight">rakafi003@gmail.com</a>
             <div className="nav-panel__social" style={{display:'flex',gap:'0.7rem',flexWrap:'wrap',marginTop:'0.2rem'}}>
-              <a href="https://github.com/kafi003" target="_blank" rel="noopener" className="nav-panel__button nav-panel__button--highlight">GitHub</a>
-              <a href="https://www.linkedin.com/in/kafi003" target="_blank" rel="noopener" className="nav-panel__button nav-panel__button--highlight">LinkedIn</a>
-              <a href="https://ramish.photo" target="_blank" rel="noopener" className="nav-panel__button nav-panel__button--highlight">Photography</a>
+              <a href="https://www.pexels.com/@ramish-anan-kafi-2154523264/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnISYhZzLkfbArnS2GjYUCl6sPv2fY2HXGv0NU4NtxgGtQak10Tb-wbcHtRDo_aem_4-CCY0j7nxGRU5RjjNYYww" target="_blank" rel="noopener" className="nav-panel__button nav-panel__button--highlight">Photography</a>
             </div>
           </div>
         </div>
